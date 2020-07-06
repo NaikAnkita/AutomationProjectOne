@@ -6,13 +6,14 @@ import junit.framework.Assert;
 
 public class DemoTest {
 	
-	@Test
+	@Test (priority = 1)
 	public void sum() {
 		System.out.println("SUM");
 		int a = 10;
 		int b = 20;
 		Assert.assertEquals(30, a+b);
 		}
+	
 	
 	@Test
 	public void Sub() {
